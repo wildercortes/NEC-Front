@@ -1,0 +1,19 @@
+<div class="container">
+    <mat-card>
+        <mat-card-title>Detalle</mat-card-title>
+        <hr>
+        <p>ID: {{coin.id}}</p>
+        <p>Nombre: {{coin.name}}</p>
+        <p>Symbolo: {{coin.symbol}}</p>
+        <p>Precio: {{coin.price}}</p>
+        <p>
+            <input class="input"  matInput placeholder="entroduzca cantidad para conversion" id="amount">
+        </p>
+        
+        <div class="row-buttons">
+            <span class="spacer"></span>
+            <button (click)="GetAmount()" class="form-btn" mat-raised-button color="primary"> Convertir</button>
+            <button mat-button mat-dialog-close>Cancel</button>
+        </div>
+    </mat-card>
+</div>
